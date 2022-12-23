@@ -5,7 +5,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["Cleave.API/Cleave.API.csproj", "Cleave.API/"]
+COPY [".", "Cleave.API/"]
 RUN dotnet restore "Cleave.API/Cleave.API.csproj"
 COPY . .
 WORKDIR "/src/Cleave.API"
