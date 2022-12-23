@@ -27,7 +27,7 @@ jobs:
           endpoint: ${{ secrets.ACR_ENDPOINT }}
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
-      - run: |
+        run: |
           echo $endpoint
           echo $username
           echo $password
